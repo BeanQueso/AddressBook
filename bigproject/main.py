@@ -66,7 +66,8 @@ if start.lower() == "y":
             #open the contacts file to read
             with open("contacts.csv", "r") as f:
                 #remove column names
-                k = f[1:]
+                k = f.readlines()
+                k = k[1:]
 
                 #loop through column-name-less dataframe
                 for i in k:
@@ -95,7 +96,8 @@ if start.lower() == "y":
             print("\nContacts: ")
             with open("contacts.csv", "r") as f:
                 #define dataframe wihtout column names
-                j = f[1:]
+                j = f.readlines()
+                j = j[1:]
 
                 #loop through the dataframe
                 for i in j:
