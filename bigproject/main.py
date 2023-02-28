@@ -1,6 +1,5 @@
 '''
 "Contact information book"
-Eshaan Tripathi
 11/4/22
 Contact information book
 '''
